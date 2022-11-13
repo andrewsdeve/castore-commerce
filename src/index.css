@@ -1,0 +1,269 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*NavBar*/
+.Wrapper{
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding:0.5rem;
+}
+.left{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.Center{
+  flex: 5;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+.MenuItem{
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 100px;
+  text-decoration: none;
+  color: white;
+}
+.Rigth{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.Logo{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.icon{
+  
+
+}
+.iconCart{
+  margin-right: 2rem;
+}
+
+.badge{
+  background-color:black;
+  color: white;
+  font-size: 1rem;
+  padding: 1px 2px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  right: 25px;
+  bottom:730px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+/*Cards Products*/
+
+
+
+.wrapper {
+  height: 420px;
+  width: 654px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  float: left;
+  height: 420px;
+  width: 327px;
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+  width: 330px;
+}
+
+.product-info {
+  float: left;
+  height: 420px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.product-text {
+  height: 300px;
+  width: 327px;
+}
+
+.product-text h1 {
+  margin:10px;
+  padding-top: 52px;
+  font-size: 28px;
+  color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.product-text h2 {
+  border-radius: 20px;
+  width: 150px;
+  text-align: center;
+  background-image: linear-gradient(to left bottom, #373705, #21552a, #007266, #008baf, #129aeb);
+  color: white;
+  margin: 0 0 47px 38px;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.product-text p {
+  height: 125px;
+  margin:10px;
+  font-family: 'Playfair Display', serif;
+  color:black;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.product-price-btn p {
+  display: inline-block;
+  position: absolute;
+  top: -50px;
+  height: 50px;
+  font-family: 'Trocchi', serif;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #474747;
+}
+
+span {
+  display: inline-block;
+  height: 50px;
+  font-family: 'Suranna', serif;
+  font-size: 34px;
+}
+
+.product-price-btn button {
+  float:right;
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  margin: 0 40px 0 16px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: white;
+  background-color:black;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn button:hover {
+  background-color: #79b0a1;
+}
+
+.details{
+  text-decoration: none;
+  background-color: black;
+  border-radius: 15px ;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+  margin-left: 50px;
+  display:grid;
+  font-size: 16px;
+  -webkit-border-radius: 15px ;
+  -moz-border-radius: 15px ;
+  -ms-border-radius: 15px ;
+  -o-border-radius: 15px ;
+}
+
+
+/*CSS ITEMCOUNT*/
+
+.itemCount{
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.count{
+  font-size: 15px;
+  margin: 5px;
+}
+
+button{
+  cursor: pointer;
+  background-color: black;
+  /*Green*/border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px ;
+  -webkit-border-radius: 20px ;
+  -moz-border-radius: 20px ;
+  -ms-border-radius: 20px ;
+  -o-border-radius: 20px ;
+}
+.count{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: red;
+  padding: 10px;
+  color: white;
+}
+
+.addCart{
+  margin-left: 1rem;
+}
+
+/*ItemList*/
+.itemList{
+  padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
