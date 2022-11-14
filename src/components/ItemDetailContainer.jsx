@@ -4,42 +4,35 @@ import { useEffect } from 'react'
 import ItemDetail from './ItemDetail'
 import {datos} from '../util/datos'
 import customFetch from '../util/customFetch'
-import ItemCount from './ItemCount'
+import { useParams } from 'react-router-dom'
 
 const ItemDetailContainer = () => {
     const [info, setInfo] = useState([])
+    const {idItem} = useParams();
 
     // Se monta el componente
 
-    useEffect(()=>{
-        customFetch(2000,datos.find(item => item.id))
-        .then(response => setInfo(datos))
-        .catch(error => console.log(error))
-    })
+    useEffect(() => {
+        customFetch(2000, datos.find(item => {
+            if (idItem === undefined) return item;
+            return item.id === parseInt(idItem)
+        }))
+            .then(result => setInfo(result))
+            .catch(err => console.log(err))
+    }, [idItem]);
 
 
 
   return (
     <>
-        {
-            info.map(item => (
-                <ItemDetail
-                key={item.id}
-                thumbnail={item.thumbnail}
-                title={item.title}
-                stock={item.stock}
-                description={item.description}
-                price={item.price}                
+        <ItemDetail
+                key={info.id}
+                thumbnail={info.thumbnail}
+                title={info.title}
+                stock={info.stock}
+                description={info.description}
+                price={info.price}                
                 />
-            ))
-        }
-
-        <ItemCount/>
-
-
-    
-    
-    
     </>
   )
 }
