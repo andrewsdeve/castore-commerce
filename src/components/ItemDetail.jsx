@@ -19,14 +19,14 @@ const ItemDetail = (props) => {
             <div className='product-info'>
                 <div className='product-text'>
                     <h1>{props.title}</h1>
-                    <h2>Stock {props.stock} </h2>
+                    <h2>{props.stock} Stock</h2>
                     <p>{props.description} </p>
                 </div>
                 <div className='product-price-btn'>
                     <p><span> {props.price} </span> </p>
-                    <button type='button'>Details</button>
                 </div>
-                <ItemCount stock={props.stock} initial={1} onAdd={onAdd}  />
+                <ItemCount className='button' stock={props.stock} initial={1} onAdd={onAdd}  />
+                
             </div>
         </div>
         : <p>Consultando....</p>

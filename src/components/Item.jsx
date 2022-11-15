@@ -11,7 +11,7 @@ const Item = ({thumbnail, title,stock,description,price,id}) => {
             <div className='product-info'>
                 <div className='product-text'>
                     <h1>{title}</h1>
-                    <h2>{stock} </h2>
+                    <h2>{stock} stock </h2>
                     <p>{description} </p>
                 </div>
                 <div className='product-price-btn'>

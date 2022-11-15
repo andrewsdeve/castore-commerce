@@ -31,7 +31,6 @@ const ItemListContainer = () => {
   return (
     <>
         <ItemList items={inform} />
-        <ItemCount/>
     
     
     </>

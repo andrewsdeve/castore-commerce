@@ -122,7 +122,7 @@
 
 .product-text h2 {
   border-radius: 20px;
-  width: 150px;
+  width: 140px;
   text-align: center;
   background-image: linear-gradient(to left bottom, #373705, #21552a, #007266, #008baf, #129aeb);
   color: white;
@@ -138,7 +138,7 @@
 }
 
 .product-text p {
-  height: 125px;
+  height: 100px;
   margin:10px;
   font-family: 'Playfair Display', serif;
   color:black;
@@ -148,30 +148,28 @@
   overflow: hidden;
 }
 
+
 .product-price-btn {
   height: 103px;
   width: 327px;
   margin-top: 30px;
+  margin-right: 200px;
   position: relative;
 }
 
 .product-price-btn p {
   display: inline-block;
   position: absolute;
-  top: -50px;
-  height: 50px;
+  margin-right:100px;
+  top: -580px;
   font-family: 'Trocchi', serif;
-  margin: 0 0 0 38px;
-  font-size: 28px;
-  font-weight: lighter;
-  color: #474747;
+  color:black;
 }
 
 span {
   display: inline-block;
-  height: 50px;
   font-family: 'Suranna', serif;
-  font-size: 34px;
+  font-size: 25px;
 }
 
 .product-price-btn button {
@@ -223,6 +221,8 @@ span {
   display: flex;
   align-items: center;
   margin: 20px;
+  position: absolute;
+  margin-top: -100px;
 }
 .count{
   font-size: 15px;
